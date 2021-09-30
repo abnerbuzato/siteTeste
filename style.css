@@ -1,0 +1,94 @@
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo : #ffff;
+    --cor-texto : #263238 ;
+    --cor-hover: #2632a2;
+    --cor-secundaria : #e9ebed;
+    --cor-destaque : #ff600f;
+}
+
+.header{
+    background-color: var(--cor-secundaria);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dp-menu ul{
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    text-align: center;
+    background-color: var(--cor-secundaria);
+    margin: 0;
+    height: auto;
+    width: auto;
+};
+
+.dp-menu ul{
+    position: relative;
+}
+
+.dp-menu ul li{
+    display: inline-block;
+    
+}
+
+.dp-menu ul li a{
+    position: relative;
+    color: var(--cor-texto);
+    text-decoration:none;
+    padding: 10px;
+    transition: background .5s;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+
+}
+
+.dp-menu ul li a:hover{
+    color: var(--cor-hover);
+
+}
+
+a::after{
+    content: "";
+    position:absolute;
+    background-color: #ff3c78;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 2px;
+    transition: .3s;
+
+
+}
+
+a:hover:after{
+    width: 100%;
+
+}
+
+.foco {
+    width:100% ;
+    height: 574px ;
+    background: url("https://picsum.photos/id/0/1200/700") no-repeat center;
+    background-size: cover;
+    opacity:60% ;
+
+}
+
+.foco h1{
+    color: #ffff;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
